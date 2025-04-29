@@ -11,19 +11,19 @@ void setup()
 
 void loop()
 {
-  // for (int pos = 0; pos <= 180; pos++)
-  // {
-  //   myServo.write(pos);
-  //   delay(10);
-  // }
-  // for (int pos = 180; pos >= 0; pos--)
-  // {
-  //   myServo.write(pos);
-  //   delay(10);
-  // }
-  myServo.write(90);
-  delay(2000);
-  myServo.write(0);
-  delay(2000);
-  myServo.write(90);
+  for (int pos = 0; pos <= 180; pos++)
+  {
+    myServo.write(pos);
+    delay(10);
+  }
+  for (int pos = 180; pos >= 0; pos--)
+  {
+    myServo.write(pos);
+    delay(10);
+  }
+  // myServo.write(90);
+  // delay(2000);
+  // myServo.write(0);
+  // delay(2000);
+  // myServo.write(90);
 }
